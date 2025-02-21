@@ -1,0 +1,68 @@
+body {
+    background-color: var(--main-color);
+    font-family: main;
+    margin: 0;
+}
+
+button {
+    all: unset;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    width: auto;
+    background-color: var(--loading-bar);
+    border-color: var(--loading-bar);
+    border-radius: 10px;
+    color: white;
+}
+
+button:active {
+    transform: scale(0.90);
+}
+
+button:hover {
+    background-color: var(--button);
+    cursor: pointer;
+}
+
+#game-name {
+    justify-self: right;
+}
+
+#garb {
+    font-size: 32px;
+}
+
+p {
+    margin: 0;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-self: center;
+    align-items: center;
+}
+
+#header img {
+    height: 400px;
+    position: relative;
+    right: 190px;
+    top: 30px;
+}
+
+main {
+    max-width: 1000px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: auto;
+}
+
+#waste {
+    font-size: 48px;
+    position: relative;
+    right: 100px;
+}

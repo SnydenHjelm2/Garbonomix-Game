@@ -1,0 +1,113 @@
+body {
+    background-color: var(--main-color);
+    font-family: main;
+}
+
+#avatar {
+    text-align: center;
+}
+
+#avatar img {
+    height: 470px;
+}
+
+#avatar a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#avatar a:active {
+    background-color: black;
+    color: var(--main-color);
+}
+
+#avatar a:hover {
+    text-decoration: underline;
+}
+
+#back {
+    font-size: 12px;
+}
+
+#o-avatars {
+    max-width: 1000px;
+    margin: auto;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+#o-avatars div img {
+    width: 100%;
+}
+
+#o-avatars div img:hover {
+    cursor: pointer;
+}
+
+#done button {
+    all: unset;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: var(--button);
+    border-color: #a4893a;
+    font-size: 20px;
+    color: white;
+}
+
+#done button:active {
+    transform: scale(0.90);
+}
+
+#done button:hover {
+    cursor: pointer;
+    background-color: var(--loading-bar);
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+#name-of-village {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#name-of-village input {
+    width: 600px;
+    height: 50px;
+    border-radius: 12px;
+    border: 2px solid #a4893a;
+    border-width: 2px;
+    box-shadow: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    z-index: 1;
+    display: none;
+}
+
+p {
+    font-size: 38px;
+}
