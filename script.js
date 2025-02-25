@@ -12,7 +12,6 @@ function pickAvatar(avatar) {
 
 
 
-const chooseAvatar = document.querySelector("#char-select");
 const avatarImage = document.querySelector("#avatar img");
 const overlay = document.querySelector(".overlay");
 const leila = document.querySelector("#leila img");
@@ -22,7 +21,7 @@ const villageInput = document.querySelector("input");
 const confirm = document.querySelector("#done button");
 
 let villageName = "";
-chooseAvatar.addEventListener("click", () => {overlay.style.display = "block"});
+avatarImage.addEventListener("click", () => {overlay.style.display = "block"});
 
 leila.addEventListener("click", () => {
     pickAvatar("leila");
@@ -42,14 +41,4 @@ confirm.addEventListener("click", () => {
         villageName = "Blank";
     }
     window.location.href = `village.html?text=${encodeURIComponent(villageName)}`;
-});
-
-document.body.addEventListener("keypress", (e) => {
-    if (e.key === "Enter") {
-        villageName = villageInput.value;
-        if (!villageName) {
-            villageName = "Blank";
-        }
-        window.location.href = `village.html?text=${encodeURIComponent(villageName)}`;
-    }
 });

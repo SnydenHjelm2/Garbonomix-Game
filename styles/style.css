@@ -1,6 +1,5 @@
 body {
     background-color: var(--main-color);
-    font-family: main;
     margin: 0;
 }
 
@@ -28,6 +27,7 @@ button:hover {
 
 #game-name {
     justify-self: right;
+    font-family: main;
 }
 
 #garb {

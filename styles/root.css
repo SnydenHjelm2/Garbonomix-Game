@@ -3,8 +3,20 @@
     src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
 }
 
-:root {
+@font-face {
+    font-family: itim;
+    src: url(../fonts/Itim-Regular.ttf);
+}
+
+* {
     box-sizing: border-box;
+}
+
+body {
+    font-family: itim;
+}
+
+:root {
     --main-color: #E9C353;
     --loading-bar: #6B1D1D;
     --button: #CA5015;

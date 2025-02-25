@@ -1,14 +1,22 @@
 body {
     background-color: var(--main-color);
-    font-family: main;
 }
 
 #avatar {
     text-align: center;
+    border-bottom: 2px solid var(--main-color);
+}
+
+#avatar:hover {
+    border-bottom: 2px solid black;
 }
 
 #avatar img {
-    height: 470px;
+    height: 500px;
+}
+
+#avatar img:hover {
+    cursor: pointer;
 }
 
 #avatar a {
@@ -30,23 +38,6 @@ body {
 
 #back {
     font-size: 12px;
-}
-
-#o-avatars {
-    max-width: 1000px;
-    margin: auto;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-}
-
-#o-avatars div img {
-    width: 100%;
-}
-
-#o-avatars div img:hover {
-    cursor: pointer;
 }
 
 #done a {
@@ -76,6 +67,10 @@ body {
     background-color: var(--loading-bar);
 }
 
+#done button:focus {
+    outline: 3px solid blue;
+}
+
 main {
     max-width: 1000px;
     margin: auto;
@@ -99,6 +94,7 @@ main {
     box-shadow: none;
     font-size: 20px;
     text-align: center;
+    font-family: inherit;
 }
 
 .overlay {
@@ -109,7 +105,35 @@ main {
     height: 100%;
     background-color: var(--main-color);
     z-index: 1;
-    display: none;
+    display: block;
+}
+
+#o-avatars {
+    max-width: 1000px;
+    margin: auto;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+#o-avatars div img {
+    width: 100%;
+}
+
+#o-avatars div img:hover {
+    cursor: pointer;
+}
+
+#o-avatars div:hover {
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+
+#o-head {
+    margin: 0;
+    text-align: center;
+    margin-top: 10px;
 }
 
 p {
