@@ -36,9 +36,9 @@ nattie.addEventListener("click", () => {
 });
 
 confirm.addEventListener("click", () => {
-    villageName = villageInput.value;
-    if (!villageName) {
-        villageName = "Blank";
+    villNamePara = villageInput.value;
+    if (!villNamePara) {
+        villNamePara = "Blank";
     }
-    window.location.href = `village.html?text=${encodeURIComponent(villageName)}`;
+    window.location.href = `village.html?text=${encodeURIComponent(villNamePara)}`;
 });

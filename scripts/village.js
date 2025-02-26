@@ -7,7 +7,7 @@ const name = getVillageName("text");
 const villageGreeting = document.querySelector("h2");
 const game = document.querySelector("#game");
 const gameImg = document.querySelector("#game img");
-const nImages = 5;
+const nImages = 15;
 let imgNum = 1;
 
 
@@ -18,10 +18,14 @@ gameImg.addEventListener("click", (e) => {
     e.target.src = `images/village-home-${imgNum}.png`;
 });
 
-document.body.addEventListener("keypress", (e) => {
-    if (imgNum >= nImages) {return};
-    if (e.key === "Enter") {
+document.body.addEventListener("keydown", (e) => {
+    if ((imgNum === nImages && e.key.toLowerCase() === "d") || (imgNum === 1 && e.key.toLowerCase() === "a")) {return};
+    console.log(e.key);
+    if (e.key.toLowerCase() === "d") {
         imgNum++;
+        gameImg.src = `images/village-home-${imgNum}.png`;
+    } else if (e.key.toLowerCase() === "a") {
+        imgNum--;
         gameImg.src = `images/village-home-${imgNum}.png`;
     }
 });
